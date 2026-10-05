@@ -1,0 +1,32 @@
+{
+  "jev_lite": {
+    "acc_urgent": 0.8867,
+    "acc_queue": 1.0,
+    "mae_severity": 0.1779,
+    "ece_urgent": 0.033,
+    "latency_ms": 1.155,
+    "parse_fail_rate": 0.0
+  },
+  "classical_logreg": {
+    "acc_urgent": 0.8767,
+    "acc_queue": 1.0,
+    "mae_severity": 0.1796,
+    "ece_urgent": 0.0803,
+    "latency_ms": 2.705,
+    "parse_fail_rate": 0.0
+  },
+  "rule_prompt_proxy": {
+    "acc_urgent": 0.8767,
+    "acc_queue": 0.88,
+    "mae_severity": 0.2011,
+    "ece_urgent": null,
+    "latency_ms": 0.0294,
+    "parse_fail_rate": 0.0267,
+    "note": "keyword rules stand in for zero-shot prompting (no LLM key); parse-fail 3% is simulated typical LLM malformed-JSON rate, demonstrated with strict json.loads + regex check"
+  },
+  "llm_api_estimated": {
+    "latency_ms": "600-1200 (literature, API round-trip)",
+    "parse_fail_rate": "0.02-0.05 (literature)",
+    "note": "not measured locally; included to show why System-1 typed heads matter at scale"
+  }
+}

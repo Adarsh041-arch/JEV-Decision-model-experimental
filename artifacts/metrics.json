@@ -1,0 +1,25 @@
+{
+  "is_urgent": {
+    "acc": 0.8867,
+    "ece_before": 0.0331,
+    "ece_after": 0.033,
+    "T": 1.513
+  },
+  "queue": {
+    "acc": 1.0,
+    "ece_before": 0.0009,
+    "ece_after": 0.0,
+    "T": 0.346
+  },
+  "refund_clear": {
+    "acc": 0.83,
+    "ece_before": 0.0702,
+    "ece_after": 0.0514,
+    "T": 0.882
+  },
+  "severity": {
+    "mae": 0.1779
+  },
+  "latency_ms_per_ticket": 1.576,
+  "throughput_tps": 53359.9
+}
